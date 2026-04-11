@@ -5,8 +5,7 @@ from langchain_ollama import ChatOllama
 
     # The planner model (qwen3.5:9b) is a reasoning-capable model and,
     # left on defaults, produces long <think> blocks before answering
-    # — a single call takes 10+ minutes on CPU. CommonGen doesn't need
-    # chain-of-thought, so we disable reasoning for this benchmark.
+    # — a single call takes 10+ minutes on CPU.
     # Uses model_copy so we honour whatever base model/temperature
     # agents.common currently configures.
     # num_predict caps output tokens: even with reasoning=False, a

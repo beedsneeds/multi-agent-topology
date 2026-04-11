@@ -1,5 +1,7 @@
+datasets==4.8.4
 langchain==1.2.15
 langchain_core==1.2.28
-langchain_openai==1.1.12
-langchain_ollama
-datasets
+langchain_ollama==1.1.0
+langgraph==1.1.6
+python-dotenv==1.2.2
+typing_extensions==4.15.0

@@ -7,6 +7,7 @@ SYSTEM_PROMPT = (
     "Reason step by step, then end your response with exactly: 'Answer: X' "
     "where X is one of the option letters shown below."
 )
+# TODO move this prompt to mmlu
 
 
 def format_question(question: str, options: list[str]) -> str:
@@ -17,14 +18,14 @@ def format_question(question: str, options: list[str]) -> str:
     return "\n".join(lines)
 
 
-def answer_question(
-    question: str, options: list[str], num_predict: int | None = None
-) -> str:
+def answer_question(question: str, options: list[str], num_predict: int | None = None) -> str:
     """Invoke the planner model and return the raw response text."""
     model = get_planner_model(num_predict=num_predict)
     prompt = format_question(question, options)
-    response = model.invoke([
-        SystemMessage(content=SYSTEM_PROMPT),
-        HumanMessage(content=prompt),
-    ])
+    response = model.invoke(
+        [
+            SystemMessage(content=SYSTEM_PROMPT),
+            HumanMessage(content=prompt),
+        ]
+    )
     return response.content
