@@ -11,6 +11,8 @@
 #   run_pipeline() will execute that AgentGraph.
 #   LangSmith and wandb will log its structure as metadata.
 
+# TODO why are the topologies being recreated here?
+
 from __future__ import annotations
 from dataclasses import dataclass, field
 from enum import Enum

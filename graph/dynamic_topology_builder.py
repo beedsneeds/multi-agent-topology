@@ -12,6 +12,8 @@ from graph.agent_graph import AgentGraph, AgentNode, AgentEdge, EdgeType
 
 load_dotenv()
 
+# TODO see langsmith on how this is generated at runtime
+
 
 TOPOLOGY_ARCHITECT_PROMPT = """
 You are a multi-agent topology architect. Given a user's task, you design the optimal agent collaboration graph to solve it.

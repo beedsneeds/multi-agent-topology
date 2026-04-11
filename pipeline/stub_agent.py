@@ -20,6 +20,8 @@ Topologies available:
 from dotenv import load_dotenv
 from agents.base import tokens_to_cost
 
+# TODO Make AgentResult a class and re-type the output accordingly
+
 load_dotenv()
 
 

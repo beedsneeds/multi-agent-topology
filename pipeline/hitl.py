@@ -13,6 +13,8 @@
 #     result = gate.check(question, result)
 #     return result
 
+# TODO: HITL not required for topology matters. We only care about relative performance. In production, there's a need for HITL
+# Or should we incorporate a HITL for situations where there's potential for disagreement between agents or run-off costs?
 
 class HITLGate:
     """

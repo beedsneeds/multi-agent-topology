@@ -22,6 +22,7 @@ Best for  : Tasks where the first attempt is likely wrong and iteration helps.
 Tradeoff  : Best accuracy potential. Unpredictable cost (depends on loop count).
             Risk of looping on questions the model fundamentally cannot answer.
 """
+# TODO this needs fewer agents
 
 from typing import Annotated, List
 import operator

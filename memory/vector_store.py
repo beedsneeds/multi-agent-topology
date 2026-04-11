@@ -8,6 +8,8 @@ from chromadb.utils import embedding_functions
 
 load_dotenv()
 
+# TODO this doesn't generalize well. Removing
+
 
 class AgentMemoryStore:
     """

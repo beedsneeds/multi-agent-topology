@@ -4,6 +4,9 @@ evaluation/compare_topologies.py
 Runs ALL topologies against the same question(s) and prints a comparison table.
 """
 
+# TODO this should also be in main
+# TODO: not used anywhere else
+
 import argparse
 from config.observability import init_langsmith, Projects
 from pipeline.stub_agent import run_pipeline, AVAILABLE_TOPOLOGIES

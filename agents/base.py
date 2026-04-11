@@ -15,6 +15,8 @@ run_pipeline() in stub_agent.py translates this into what the
 evaluation layer expects (cost_usd, latency_ms, etc).
 """
 
+# TODO adjust prompts and roles in each
+
 import time
 from typing import TypedDict, Annotated, List
 import operator

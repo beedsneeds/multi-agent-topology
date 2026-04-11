@@ -6,6 +6,7 @@ from evaluation.gaia_loader import GAIALoader, normalize_answer
 from pipeline.stub_agent import run_pipeline
 from config.observability import init_langsmith, Projects
 
+# TODO this also appears to not be reused anywhere and is similar to main?
 
 # Step 1: Upload GAIA tasks to LangSmith as a reusable Dataset
 
